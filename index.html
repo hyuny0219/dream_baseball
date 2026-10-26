@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>벤치에서 명예의 전당까지 : 나만의 야구선수 키우기 게임</title>
+  <meta name="description" content="한 시즌의 활약과 선택이 쌓여 커리어가 돼요. 퓨처스에서 데뷔, 국가대표, MVP, 명예의 전당까지 도전해 보세요.">
+  <meta name="theme-color" content="#0d1b2a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚾</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand"><span class="ball">⚾</span> 벤치에서 명예의 전당까지</a>
+    <nav class="nav">
+      <a href="#/play" data-nav="play">게임</a>
+      <a href="#/rank" data-nav="rank">랭킹</a>
+      <a href="#/guide" data-nav="guide">가이드</a>
+      <button type="button" class="nav-btn" id="btn-settings" aria-label="설정">⚙︎</button>
+    </nav>
+  </header>
+
+  <main id="app" class="wrap"></main>
+
+  <footer class="foot wrap">
+    <p>독립적으로 만든 가상의 야구 커리어 시뮬레이션입니다. 구단·기록·계약은 모두 가상이며 실제 경기 예측이나 선수 평가가 아닙니다.</p>
+    <p>진행 내용은 이 브라우저에만 저장돼요. 설정에서 저장 파일을 내보내고 가져올 수 있어요.</p>
+  </footer>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
